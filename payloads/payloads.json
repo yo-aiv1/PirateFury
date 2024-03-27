@@ -1,0 +1,14 @@
+{
+    "windows 64-bit": [
+      {
+        "path": "payloads/x64win/reverse-shell.c",
+        "Type": "Reverse Shell"
+      }
+    ],
+    "windows 34-bit": [
+        {
+          "path": "payloads/x86win/reverse-shell.c",
+          "Type": "Reverse Shell"
+        }
+      ]
+}
