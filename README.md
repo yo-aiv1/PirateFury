@@ -1,4 +1,5 @@
 # PirateFury
+![assests/1.png(
 ### Introduction
 PirateFury is a C2 server written in Python and comes with payloads written in C, the C2 server has only windows payloads for now.
 ### Installation
